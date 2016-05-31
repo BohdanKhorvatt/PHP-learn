@@ -32,5 +32,35 @@
 		echo PI;
 		echo "<br>";
 		echo defined("PI"); #seach constant
+		echo "<br>";
+
+		#Arithmetic operations
+		$x = 32;
+		$y = 22.13;
+		$summ = $x + $y;
+		$diff = $x - $y;
+		$mult = $x * $y;
+		$division = $x / $y;
+		//$residue = $x % $y;
+
+		echo "summa = $summ<br> differant = $diff<br> multiply = $mult<br> division = $division";
+		$z = 12;
+		$reside = $x % $z;
+		echo "<br>";
+		echo "reside = $reside";
+		echo "<br>";
+
+		$q = 400; # 1
+		$q = $q + 10;
+		echo "$q";
+		echo "<br>";
+
+		$q -= 10; # 2
+		echo "$q";
+		echo "<br>";
+
+		$q++; # 3
+		echo "$q";
+
 
 ?>
