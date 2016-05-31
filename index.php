@@ -3,7 +3,7 @@
 
 		*/
 		echo "Hello World!<br />";
-		echo "Hello World!";
+		echo "Hello World!<br>";
 
 		$myNumber = 5;
 		$float = -3.25;
@@ -20,6 +20,9 @@
 		echo "Variable bool = $bool"; // = 1
 		echo "<br>";
 		echo "Variable boolFalse = $boolFalse"; # ""
+		$myNumber = 12;
+		echo "Variable myNumber = $myNumber";
+
 
 
 ?>
