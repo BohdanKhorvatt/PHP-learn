@@ -22,7 +22,15 @@
 		echo "Variable boolFalse = $boolFalse"; # ""
 		$myNumber = 12;
 		echo "Variable myNumber = $myNumber";
+		echo "<br>";
 
 
+		# constant
+		echo PHP_VERSION; # version
+		define("PI", 3.14); # new constant
+		echo "<br>";
+		echo PI;
+		echo "<br>";
+		echo defined("PI"); #seach constant
 
 ?>
