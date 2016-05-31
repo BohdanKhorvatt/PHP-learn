@@ -61,6 +61,14 @@
 
 		$q++; # 3
 		echo "$q";
+		echo "<brS>";
+
+		# String operation
+
+		$str_1 = "<b>String 1</b><br>";
+		$str_2 = "<i>String 2</i><br><input type\"text\">";
+		echo $str_1." ".$str_2.'" "'." \" \""."\\";
+
 
 
 ?>
