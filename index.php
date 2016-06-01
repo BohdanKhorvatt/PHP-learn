@@ -121,7 +121,42 @@
 		echo "<br>".$string;
 
 
+		# Operator Switch () case
 
+		$x = 12;
+
+
+		switch ($x) {
+			case 'Hello':
+				# code...
+				break;
+			case 5:
+
+				#code
+				break;
+			case 12:
+				echo "<hr>Work!"; // +
+				break;
+			
+			default:
+				# code...
+				break;
+		}
+
+		switch($x) {
+			  case 'x':  // if (x === 'value1')
+			    # code
+			    break;
+
+			  case 'y':  // if (x === 'value2')
+			    # code
+			    break;
+
+			  default:
+			    # code
+			  	echo "<br>Work default!";
+			    break;
+			}
 
 
 
