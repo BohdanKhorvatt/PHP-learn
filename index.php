@@ -91,7 +91,19 @@
 
 		echo "<br>".$bool;
 
+		#equivalence operator
 
+		$string = "Example";
+		$mun = 0;
+
+		$bool_1 = $string == true;
+
+		echo "<hr>";
+		echo "$bool_1 = $string == true;"."<br>";
+
+		$bool_2 = $num == ""; # ===
+
+		echo "$bool_2 = $num ==\"\"";
 
 
 
