@@ -103,7 +103,27 @@
 
 		$bool_2 = $num == ""; # ===
 
-		echo "$bool_2 = $num ==\"\"";
+		echo "$bool_2 = $num ==\"\""."<br>";
+
+		#Conditional operators
+
+		$x = 10;
+		$y = 5;
+		if ($x != $y && $x != 12 && $y == 5 && ($x + 5) == 15) {
+			echo "work!";
+		} else if ($x != 4) {
+			// cod
+		} else {
+			// cod
+		}
+
+		$x == $y ? $string = "Yes" : $string = "No";
+		echo "<br>".$string;
+
+
+
+
+
 
 
 
