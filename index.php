@@ -69,6 +69,33 @@
 		$str_2 = "<i>String 2</i><br><input type\"text\">";
 		echo $str_1." ".$str_2.'" "'." \" \""."\\";
 
+		#Logical operation
+
+		$x = 12;
+		$y = 34;
+		$z = 4.25;
+
+		$bool_1 = $x != $z; // == or !=
+
+		$bool_2 = $x < $y; // <,> or >=
+
+		echo "<br>".$bool_1."<br>".$bool_2."<hr>";
+
+		$bool_3 = !($x == $y);
+		$bool_4 = $x == $y || $z < $y; // logical disjunction
+		$bool_5 = $x < $y && $x < $y; // logical conjunction
+		$bool_6 = $x < $y ^ $z < $y;  // 1 or 0
+		echo "<br>".$bool_3."<br>".$bool_4."<hr>".$bool_5."<br>".$bool_6."<hr>";
+
+		$bool = !($x != $y && $z < $x) || $x != $y;
+
+		echo "<br>".$bool;
+
+
+
+
+
+
 
 
 ?>
