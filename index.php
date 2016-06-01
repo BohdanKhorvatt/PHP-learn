@@ -157,6 +157,33 @@
 			  	echo "<br>Work default!";
 			    break;
 			}
+				echo "<hr>";
+
+			# cycle for, while and do while
+
+
+			for($i = 0; $i <= 10; $i ++) {
+				if($i % 5 == 0) continue;  // continue !!! use in this thre cycle
+				if($i == 7) break; //break !!!
+				echo "cycle for #$i<br>";  // for
+			}
+				echo "<hr>";
+
+				$x = 5;
+
+				while ($x < 10) {				//While
+					echo "Work while!#$x<br>";
+					$x++;
+				}
+				echo "<hr>";
+
+				$z = 10;
+
+				do {
+					echo "Work do while.";
+				} while ($z < 5);
+				
+
 
 
 
