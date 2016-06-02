@@ -233,8 +233,21 @@
 					}
 					return $summa / count ($array);
 				}
+				echo "<hr>";
 
-				
+				# Two-dimensional arrays
+
+				$array = array (array (12, 4.46, "string", true), array ("Exemple"), array (45, "strong"));
+
+				echo $array [0][2];
+
+				for ($i = 0; $i < count($array); $i++) {
+					for($j = 0; $j < count($array[$i]);) {
+						echo $array[$i][$j];
+					}
+					echo "<br>";
+				}
+
 
 
 
