@@ -279,5 +279,18 @@
 					test_2 ();
 				}
 
+				# Connection files
+			/*
+			$title = "title";
+			require "header.php";
+			echo "body";
+			require "footer.php";
+			*/
+
+			$title = "title";
+			include "header.php";
+			echo "body";
+			include "footer.php";
+
 
 ?>
