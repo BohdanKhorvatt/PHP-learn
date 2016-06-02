@@ -249,14 +249,35 @@
 				}
 
 
+				# The scope of variables
 
+				echo "<hr>";
+				$x = 12;
+				echo $x"<br>";
+				$x = 10;
+				echo $x"<br>";
 
+				function test () {
+					//$GLOBALS["x"] += 7;
 
+					global $x;
+					$x += 10;
+					echo $x;
+				}
 
+				test ();
 
+				function test_2 () {
+					static $id;
+					$id ++;
+					echo $id;
+				}
 
+				echo "Variable x = $x<br>";
 
-
+				for ($i = 0; $i < 10; $i++) {
+					test_2 ();
+				}
 
 
 ?>
