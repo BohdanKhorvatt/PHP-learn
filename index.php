@@ -204,6 +204,41 @@
 
 				printWords ($sum, $x, $y);
 
+				# array
+
+				$array = array (12, -3.25, "String", false);
+
+				echo $array[1];
+				$array[1] = "String";
+				$array[2] = 4.25;
+				echo "<br>".$array[1]."<br>".$array[2];  // array
+				$array[] = "New element";
+				acho "<br>".$array[4];
+
+				for ($i = 0; $i < count($array); i++) {
+					echo "<br> Elememt array =".$array[$i];
+				}
+
+				$list = array ("age" => 12, "name" => "Alex", "schoolBoy" => true);
+				$list["age"] = 10;
+
+				$summa = 0;
+
+				echo getAverage (array ("first" => 12, "sec" => 45, "third" => 23, "forth" => 55));
+
+				function getAverage ($array) {
+					foreach ($array as $key => $value){
+						$summa += $value;
+						echo $key."<br>";
+					}
+					return $summa / count ($array);
+				}
+
+				
+
+
+
+
 
 
 
