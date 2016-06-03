@@ -308,8 +308,27 @@
 
 			}
 
+			# Options for the type of
 
+			$x = 15;
+			if(isset ($x)) echo "exist"; // isset !!!
+			else echo "no exist";
+			echo "<br>";
+			unset ($x);					// unset !!!
+			if(isset ($x)) echo "exist"; // isset !!!
+			else echo "no exist";
+			echo "<br>";
 
+			echo "Is Numeric - ".is_numeric($x)."<br>";
+			echo "Is integer - ".is_integer($x)."<br>";
+			echo "Is double - ".is_double($x)."<br>";
+			echo "Is string - ".is_string($x)."<br>";
+			echo "Is boolean - ".is_bool($x)."<br>";
+			echo "Is Scalar - ".is_scalar($x)."<br>";
+			echo "Is null - ".is_null($x)."<br>";
+			echo "Is array - ".is_array($x)."<br>";
+			echo "Is type - ".getType($x)."<br>";
+			
 
 
 
