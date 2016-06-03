@@ -292,5 +292,26 @@
 			echo "body";
 			include "footer.php";
 
+			# forms Processing
+
+			echo "<hr>";
+			print_r ($_POST);
+			//print_r ($_POST);
+			echo $_POST["name"];
+
+			//if(isset($_POST["done"]) {}
+
+			if($_POST["name"] == "") {
+				echo "write name <a href='/'>Home</a>";
+			}else {
+				header("Location:index.php");
+
+			}
+
+
+
+
+
+
 
 ?>
