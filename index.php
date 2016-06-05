@@ -183,7 +183,7 @@
 					echo "Work do while.";
 				} while ($z < 5);
 				
-
+/*
 				# function
 
 				function printWords ($word, $x, $y) {
@@ -280,12 +280,12 @@
 				}
 
 				# Connection files
-			/*
-			$title = "title";
-			require "header.php";
-			echo "body";
-			require "footer.php";
-			*/
+			
+			//$title = "title";
+			//require "header.php";
+			//echo "body";
+			//require "footer.php";
+			
 
 			$title = "title";
 			include "header.php";
@@ -331,6 +331,6 @@
 			
 
 
-
+*/
 
 ?>
