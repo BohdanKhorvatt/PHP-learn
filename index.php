@@ -437,6 +437,27 @@
 			print_r($array);
 			echo "<br>";
 
-			echo checkdate(2, 2, 1661);
+			echo checkdate(2, 2, 1661)."<br>";
 
+			# Working with Files
+
+			/* $file = fopen ("a.txt", "a+t"); //r+, w, w+, a, a+, +b,+t
+			fwrite($file, "Example\nText\nNext");
+			fclose($file); */
+
+			$file = fopen ("a.txt", "r+t");
+			while (!feof($file)) {
+			echo fread ($file, 1);
+			}
+			fseek ($file, 0);
+			echo fread ($file, 1);
+			fclose($file);
+			echo "<hr>";
+			//file_put_contents("c.txt", "TEST");
+			echo file_get_contents("c.txt")."<br>";
+			echo file_exists("a.txt")."<br>";
+			echo filesize("c.txt")."<br>";
+
+			rename ("c.txt", "b.txt");
+			unlink(filename);
 ?>
