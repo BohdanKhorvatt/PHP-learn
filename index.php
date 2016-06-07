@@ -375,4 +375,51 @@
 
 			echo trim("        string   jhghj  ")."<br>";
 
+			# Functions for working with arrays
+
+			$arr = array(12, 33, 22, 1, 2, 4);
+
+			echo count($arr)."<br>";
+			sort($arr);
+			print_r ($arr);
+			echo "<br>";
+			rsort($arr);
+			print_r($arr);
+			echo "<br>";
+			asort($arr);
+			print_r($arr);
+			echo "<br>";
+
+			$asArr = array('1' => 'a', '2' => 'b', '3' =>'c');
+			arsort($asArr);
+			print_r($asArr);
+			echo "<br>";
+			ksort($asArr);
+			print_r($asArr);
+			echo "<br>";
+
+			shuffle($asArr);
+			print_r($asArr);
+			echo "<br>";
+
+			echo "This is element ".in_array('a', $asArr)."<br>";
+
+			$arr_1 = array('1','2');
+			$arr_2 = array('3','4');
+
+			$array_3 = array_merge($arr_1, $arr_2);
+			print_r($array_3);
+			echo "<br>";
+
+			$arrDone = array(1, 3, 4, 6, 7);
+			$arrDone = array_slice($arrDone, 3, 1);
+			print_r($arrDone);
+			echo "<br>";
+			
+
+
+
+
+
+
 ?>
