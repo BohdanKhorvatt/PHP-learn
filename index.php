@@ -2,6 +2,9 @@
 		/*This is study php.
 
 		*/
+		$start = microtime(true);
+
+
 		echo "Hello World!<br />";
 		echo "Hello World!<br>";
 
@@ -416,10 +419,24 @@
 			print_r($arrDone);
 			echo "<br>";
 			
+			# date functions
 
+			
 
+			echo time ()."<br>";
+			echo microtime (true)."<br>";
 
+			echo "Time work script: ".(microtime(true) - $start)."sec"."<br>";
 
+			$time = mktime(12, 35, 23, 12, 7, 2001);
+			echo "=".$time."<br>";
 
+			echo date ("y-m-d h:i:s", 1000000000000);
+
+			$array = getdate($time);
+			print_r($array);
+			echo "<br>";
+
+			echo checkdate(2, 2, 1661);
 
 ?>
