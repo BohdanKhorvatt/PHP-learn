@@ -454,10 +454,17 @@
 			fclose($file);
 			echo "<hr>";
 			//file_put_contents("c.txt", "TEST");
-			echo file_get_contents("c.txt")."<br>";
+			//echo file_get_contents("c.txt")."<br>";
 			echo file_exists("a.txt")."<br>";
-			echo filesize("c.txt")."<br>";
+			//echo filesize("c.txt")."<br>";
 
-			rename ("c.txt", "b.txt");
-			unlink(filename);
+			//rename ("c.txt", "b.txt");
+			//unlink(filename);
+
+			# Permissions
+
+			echo __FILE__."<br>";
+			echo fileperms(__FILE__)."<br>";
+			chmod(__FILE__, 0777);
+			echo fileperms(__FILE__)."<br>";
 ?>
