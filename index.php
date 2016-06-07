@@ -467,4 +467,14 @@
 			echo fileperms(__FILE__)."<br>";
 			chmod(__FILE__, 0777);
 			echo fileperms(__FILE__)."<br>";
+
+			# phpinfo() and $_SERVER
+
+			phpinfo ();
+
+			echo $_SERVER["REMOTE_ADDR"];
+
+			# Creating a redirect
+
+			
 ?>
