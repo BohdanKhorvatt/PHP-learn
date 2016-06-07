@@ -476,5 +476,6 @@
 
 			# Creating a redirect
 
-			
+			//header ("Location: http://google.com");
+			//exit;
 ?>
