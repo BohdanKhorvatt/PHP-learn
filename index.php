@@ -183,7 +183,7 @@
 					echo "Work do while.";
 				} while ($z < 5);
 				
-/*
+
 				# function
 
 				function printWords ($word, $x, $y) {
@@ -213,13 +213,13 @@
 				$array[2] = 4.25;
 				echo "<br>".$array[1]."<br>".$array[2];  // array
 				$array[] = "New element";
-				acho "<br>".$array[4];
+				echo "<br>".$array[4];
 
-				for ($i = 0; $i < count($array); i++) {
+				for ($i = 0; $i < count($array); $i++) {
 					echo "<br> Elememt array =".$array[$i];
 				}
-
-				$list = array ("age" => 12, "name" => "Alex", "schoolBoy" => true);
+ 
+ 				$list = array ("age" => 12, "name" => "Alex", "schoolBoy" => true);
 				$list["age"] = 10;
 
 				$summa = 0;
@@ -242,9 +242,11 @@
 				echo $array [0][2];
 
 				for ($i = 0; $i < count($array); $i++) {
-					for($j = 0; $j < count($array[$i]);) {
-						echo $array[$i][$j];
+
+				for($j = 0; $j < count($array[$i]); $j++) {
+					echo $array[$i][$j];
 					}
+
 					echo "<br>";
 				}
 
@@ -253,9 +255,9 @@
 
 				echo "<hr>";
 				$x = 12;
-				echo $x"<br>";
+				echo $x."<br>";
 				$x = 10;
-				echo $x"<br>";
+				echo $x."<br>";
 
 				function test () {
 					//$GLOBALS["x"] += 7;
@@ -331,6 +333,6 @@
 			
 
 
-*/
+
 
 ?>
