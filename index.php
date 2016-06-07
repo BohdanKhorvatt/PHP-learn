@@ -331,6 +331,23 @@
 			echo "Is array - ".is_array($x)."<br>";
 			echo "Is type - ".getType($x)."<br>";
 			
+			# Mathematical functions
+
+			echo M_PI."<br>".M_E."<br>";
+			$x = -15;
+			echo abs ($x)."<br>";
+			$y = 49.5687;
+			echo round ($y, 2)."<br>"; // consider
+			echo ceil ($y)."<br>";
+			echo floor ($y)."<br>";
+
+			echo "rand - ".mt_rand(1, 10)."<br>";
+			echo min(12, 23, 1, 14, 45)."<br>";
+			echo max(23, 45, 3)."<br>";
+
+			$z = 1;
+
+			echo sin($z)."<br>"; // cos, tan but non ctan = 1/tan, asin, acos, atan
 
 
 
