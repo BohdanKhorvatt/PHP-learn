@@ -349,7 +349,30 @@
 
 			echo sin($z)."<br>"; // cos, tan but non ctan = 1/tan, asin, acos, atan
 
+			# String functions
 
+			$s = "This is example!";
+			echo strlen($s)."<br>";
+			echo strpos($s, "is", 4)."<br>";
 
+			if (strpos ($s, "T" ) !== false) {  // num T = 0, 0 = false
+				echo "T is"."<br>";
+			}else echo "T non"."<br>";
+
+			echo substr($s, 3, 7)."<br>";
+			echo substr($s, 3, -2)."<br>";
+
+			echo str_replace("is", "abc", $s)."<br>";
+			echo str_replace(array("is", "ple"), array("abc", "123"), $s)."<br>";
+
+			$str = "<b>Xaxa, big</b>";
+
+			echo htmlspecialchars($str)."<br>";
+
+			echo strtolower($str)."<br>".strtoupper($str)."<br>";
+
+			echo md5("123")."<br>";
+
+			echo trim("        string   jhghj  ")."<br>";
 
 ?>
